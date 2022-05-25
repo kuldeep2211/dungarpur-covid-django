@@ -1,0 +1,294 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COVID 19 DUNGARPUR</title>
+<meta charset="UTF-8">
+<meta name="description" content="kuldeep2211.pythonanywhere.com">
+<meta name="description" content="kuldeep2211.pythonanywhere">
+<meta name="description" content="kuldeep2211">
+<meta name="description" content="dungarpur">
+<meta name="description" content="Dungarpur">
+<meta name="keywords" content="kuldeep2211, kuldeep2211.pythonanywhere, kuldeep2211.pythonanywhere.com">
+  <meta name="description" content="covid 19 dungarpur">
+  <meta name="description" content="covid19dungarpur">
+  <meta name="description" content="COVID 19 DUNGARPUR">
+  <meta name="description" content="COVID19DUNGARPUR">
+  <meta name="keywords" content="dungarpur covid19">
+  <meta name="keywords" content="covid19 dungarpur">
+  <meta name="keywords" content="update dungarpur covid19">
+  <meta name="keywords" content="update covid19 dungarpur">
+  <meta name="keywords" content="covid19 dungarpur total cases">
+  <meta name="keywords" content="covid19, active, cases, dungarpur, total cases">
+  <meta name="keywords" content="update, update covid19, active, update cases, update dungarpur, update total cases">
+  <meta name="keywords" content="covid19, recovered, covid19dungarpur">
+  <meta name="keywords" content="covid19, update recovered, update covid19dungarpur">
+  <meta name="keywords" content="covid19, covid 19 dungarpur">
+  <meta name="keywords" content="covid19, update covid 19 dungarpur">
+  <meta name="author" content="Kuldeep Panchal">
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500">
+    <link rel="stylesheet" href="/static/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/jquery-ui.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
+
+
+    <link rel="stylesheet" href="/static/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="/static/css/fl-bigmug-line.css">
+
+    <!-- <link rel="stylesheet" href="/static/css/aos.css"> -->
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- <div class="site-wrap" style="background-color: #958484; size: auto"> -->
+    <header class="site-navbar py-1" role="banner">
+    <a name="top"></a>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-20 col-xl-20">
+            |<a href="" style="margin: 16px;">Refresh</a>|
+            <a href="../" style="margin: 16px;">Home</a>|
+            <a href="banswara" style="margin: 15px;">Banswara</a>|
+            <a href="udaipur" style="margin: 15px;">Udaipur</a>|
+            <a href="#bottom" style="margin: 16px;">About us</a>|<br>
+            |<a href="https://www.worldometers.info/coronavirus/?" style="margin: 10px;">Total Test of Covid19 Completed by whole Country Till Today</a>|
+            <h1 class="mb-0" align="center"><a href="" class="text-black h2 mb-0"><font color="red" style="margin: 16px;">COVID-19<strong> Dungarpur District Info</strong></font></a></h1>
+          </div>
+
+          <!-- <div class="col-10 col-xl-10 d-none d-xl-block">
+            <nav class="site-navigation text-right" role="navigation">
+
+              <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="active"><a href="">Refresh</a></li>
+              </ul>
+            </nav>
+          </div> -->
+
+          <div class="col-6 col-xl-2 text-right d-block">
+
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+  <marquee><h4><font color="#FF0000">Avoid going outside during the lockdown help break out the chain of spreading virus.</font></h4></marquee>
+
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="unit-3 h-100 bg-white">
+          <span class="Count">
+            <div class="item-animate">
+      <center><h2><font color="#FF0000">Confirmed Cases</p></font></h2>
+      <h2 class="counter-count1">{{consum.consum}}</h2></center>
+    </div></span>
+    <script>
+    $('.counter-count1').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 1000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+    </script>
+        </div>
+
+        <div class="unit-3 h-100 bg-white">
+          <span class="Count">
+            <div class="item-animate">
+           <center> <h2><font color="#4013e4">Active Cases</font></h2><h2 class="counter-count2">{{acsum.acsum}}</h2>
+          </center></div></span>
+
+        <script>
+      $('.counter-count2').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 1000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+    </script>
+        </div>
+
+        <div class="unit-3 h-100 bg-white">
+          <span class="Count">
+            <div class="item-animate">
+           <center> <h2><font color="#008000">Patients Recovered</font></h2><h2 class="counter-count3">{{recsum.recsum}}</h2>
+          </center></div></span>
+
+        <script>
+      $('.counter-count3').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 1000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+    </script>
+        </div>
+          <div class="unit-3 h-100 bg-white">
+          <span class="Count"><div class="item-animate">
+           <center> <h2><font color="#808080">Total Deaths</font></h2><h2 class="counter-count4">{{deccsum.deccsum}}</h2>
+          </center></div></span>
+        <script>
+      $('.counter-count4').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 1000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+    </script>
+      </div><br>
+    </div>
+  </div>
+  <marquee style="color: red;"><h4>We all are in Red Zone So be Safe and Sane !</h4></marquee>
+  <marquee style="color: red;"><h5>All information is taken from news papers and patrika dungarpur official facebook page</h5></marquee>
+  <p style="margin: 16px;">QC = Quarantine Center</p>
+  <p style="margin: 16px;">&larr; Swipe to left &larr;</p>
+    <a href="../" style="margin: 16px;">Back</a>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+            <tbody>
+            <tr>
+              <td align="center"><b><font size="4">Village</font></b></td>
+              <td align="center"><b><font size="4">Tehsil</font></b></td>
+                <td align="center"><b><font color="#FF0000">CONFIRMED</font></b></td>
+                <td align="center"><b><font color="#4013e4">ACTIVE</font></b></td>
+                <td align="center"><b><font color="#008000">RECOVERED</font></b></td>
+                <td align="center"><b><font color="#808080">DECEASED</font></b></td>
+            </tr>
+        {% for i in data %}
+        <tr>
+          <td align="center">{{i.village}}</td>
+          <td align="center">{{i.tehsil}}</td>
+          <td align="center"><font color="#FF0000">{{i.confirmed}}</font></td>
+          <td align="center"><font color="#4013e4">{{i.active}}</font></td>
+          <td align="center"><font color="#008000">{{i.recovered}}</font></td>
+          <td align="center"><font color="#808080">{{i.deceased}}</font></td>
+        </tr>
+        {% endfor %}
+          </tbody>
+      </table>
+      </div>
+          <!--<br/><br/>-->
+
+
+
+  <footer class="site-footer">
+            <a name="bottom"></a>
+            <p>
+            <p align="right"><a href="#top">go to top view &#8593;</a></p>
+            <!-- Copyright ©  --><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+            Developed by <b>Kuldeep Panchal</b> <br>
+            Follow me on Social Media <a href="https://www.facebook.com/kuldeep2211/"><img src="{% static 'facebook.png' %}" height="28" width="30"></a>
+            <a href="https://www.instagram.com/kuldeep310797/"><img src="{% static 'instagram.png' %}" height="30" width="30"></a>
+            <a href="https://wa.me/919166002646"><img src="{% static 'Whatsapp.png' %}" height="32" width="32"></a>
+            <br>
+            Any Updates related to covid-19 cases in Dungarpur please feel free to inform me on <a href="tel:+919166002646">+919166002646</a> <br><br>
+            <script>document.write(new Date().getFullYear());</script> All Rights Reserved | <b>Kuldeep Panchal</b>
+            <i class="icon-heart text-danger" aria-hidden="true"></i>
+            </p>
+
+    </footer>
+
+  <script src="/static/js/jquery-3.3.1.min.js"></script>
+  <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/static/js/jquery-ui.js"></script>
+  <script src="/static/js/popper.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/owl.carousel.min.js"></script>
+  <script src="/static/js/jquery.stellar.min.js"></script>
+  <script src="/static/js/jquery.countdown.min.js"></script>
+  <script src="/static/js/jquery.magnific-popup.min.js"></script>
+  <script src="/static/js/bootstrap-datepicker.min.js"></script>
+  <script src="/static/js/aos.js"></script>
+
+  <script>
+      // This example displays an address form, using the autocomplete feature
+      // of the Google Places API to help users fill in the information.
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      var placeSearch, autocomplete;
+      var componentForm = {
+        street_number: 'short_name',
+        route: 'long_name',
+        locality: 'long_name',
+        administrative_area_level_1: 'short_name',
+        country: 'long_name',
+        postal_code: 'short_name'
+      };
+
+      function initAutocomplete() {
+        // Create the autocomplete object, restricting the search to geographical
+        // location types.
+        autocomplete = new google.maps.places.Autocomplete(
+            /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+            {types: ['geocode']});
+
+        // When the user selects an address from the dropdown, populate the address
+        // fields in the form.
+        autocomplete.addListener('place_changed', fillInAddress);
+      }
+
+      function fillInAddress() {
+        // Get the place details from the autocomplete object.
+        var place = autocomplete.getPlace();
+
+        for (var component in componentForm) {
+          document.getElementById(component).value = '';
+          document.getElementById(component).disabled = false;
+        }
+
+        // Get each component of the address from the place details
+        // and fill the corresponding field on the form.
+        for (var i = 0; i < place.address_components.length; i++) {
+          var addressType = place.address_components[i].types[0];
+          if (componentForm[addressType]) {
+            var val = place.address_components[i][componentForm[addressType]];
+            document.getElementById(addressType).value = val;
+          }
+        }
+      }
+
+      // Bias the autocomplete object to the user's geographical location,
+      // as supplied by the browser's 'navigator.geolocation' object.
+
+  <script src="/static/js/main.js"></script>
+
+
+<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div></body>
+</html>
